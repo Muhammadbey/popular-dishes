@@ -1,0 +1,125 @@
+*,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #f1f1f1;
+}
+.header-content {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 7px 9px -5px #0000004c;
+  z-index: 1;
+}
+.nav-bar {
+  width: fit-content;
+  height: 50px;
+  padding-left: 15px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.humburger-menu {
+  width: fit-content;
+  height: 25px;
+  display: flex;
+  margin-top: 13px;
+  padding-right: 20px;
+}
+.gallery-section {
+  width: 100%;
+  background-color: rgb(255, 245, 245);
+  padding: 40px 20px;
+}
+.gallery-section_heading {
+  text-align: center;
+  font-size: 50px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(49, 48, 48);
+  text-transform: uppercase;
+}
+.gallery-wrapper {
+  padding: 40px 30px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.card-wrapper {
+  width: 300px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 7px 9px -5px #211e1e4c;
+  cursor: context-menu;
+  overflow: hidden;
+  padding: 15px 15px;
+}
+.card-wrapper h1 {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: rgb(149, 120, 65);
+  text-align: start;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+.card-image {
+  width: 100%;
+  height: 200px;
+
+  border-radius: 10px;
+  object-fit: cover;
+  transition: 0.8s;
+}
+.card-content {
+  padding: 20px;
+}
+.price-and-button {
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(149, 120, 65);
+  padding-left: 15px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.price-and-button button {
+  background-color: rgb(149, 120, 65);
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-right: 15px;
+  border-radius: 8px;
+  color: #f1f1f1;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+.price-and-button button:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 710px) {
+  .card-wrapper {
+    width: 450px;
+    padding: 20px 30px;
+  }
+
+  .card-image {
+    height: 250px;
+  }
+}
+
+@media (max-width: 430px) {
+  .card-wrapper {
+    width: 300px;
+  }
+}
